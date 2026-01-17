@@ -33,3 +33,11 @@ Route::get('/bookings', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
+Route::get('/faq', function () {
+    return view('faq');
+})->name('faq');
