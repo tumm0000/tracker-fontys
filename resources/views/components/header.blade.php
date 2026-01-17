@@ -3,14 +3,33 @@
         <div class="flex items-center justify-between h-16">
             <!-- Logo -->
             <div class="flex-shrink-0">
-                <a href="/" class="text-white font-serif italic text-2xl">Logo</a>
+                @php
+                    $isHomeActive = request()->routeIs('/') || request()->is('/');
+                @endphp
+                <a href="/" class="text-white font-serif italic text-2xl {{ $isHomeActive ? 'font-bold' : '' }}">Logo</a>
             </div>
             
             <!-- Navigation Links -->
             <div class="hidden md:flex items-center gap-8">
-                <a href="/resources" class="text-white hover:text-lavender-gray transition-colors">Resources</a>
-                <a href="/bookings" class="text-white hover:text-lavender-gray transition-colors">Bookings</a>
-                <a href="#about" class="text-white hover:text-lavender-gray transition-colors">About</a>
+                @php
+                    // Check welke route actief is
+                    $isResourcesActive = request()->routeIs('resources') || request()->routeIs('resource.show') || request()->is('resources*');
+                    $isBookingsActive = request()->routeIs('bookings') || request()->is('bookings*');
+                    $isDashboardActive = request()->routeIs('dashboard') || request()->is('dashboard*');
+                @endphp
+                
+                <a href="{{ route('resources') }}" 
+                   class="text-white hover:text-lavender-gray transition-colors {{ $isResourcesActive ? 'font-bold underline decoration-2 underline-offset-4' : '' }}">
+                    Resources
+                </a>
+                <a href="{{ route('bookings') }}" 
+                   class="text-white hover:text-lavender-gray transition-colors {{ $isBookingsActive ? 'font-bold underline decoration-2 underline-offset-4' : '' }}">
+                    Bookings
+                </a>
+                <a href="#about" 
+                   class="text-white hover:text-lavender-gray transition-colors">
+                    About
+                </a>
                 <div class="relative group">
                     <button class="text-white hover:text-lavender-gray transition-colors flex items-center gap-1">
                         More
@@ -20,8 +39,18 @@
                     </button>
                     <div class="absolute top-full left-0 mt-2 w-48 bg-voodoo rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-voodoo/20">
                         <div class="py-2">
-                            <a href="/faq" class="block px-4 py-2 text-white hover:text-lavender-gray hover:bg-voodoo/50 transition-colors">FAQ</a>
-                            <a href="/contact" class="block px-4 py-2 text-white hover:text-lavender-gray hover:bg-voodoo/50 transition-colors">Contact</a>
+                            @php
+                                $isFaqActive = request()->is('faq*');
+                                $isContactActive = request()->is('contact*');
+                            @endphp
+                            <a href="/faq" 
+                               class="block px-4 py-2 text-white hover:text-lavender-gray hover:bg-voodoo/50 transition-colors {{ $isFaqActive ? 'font-bold bg-voodoo/30' : '' }}">
+                                FAQ
+                            </a>
+                            <a href="/contact" 
+                               class="block px-4 py-2 text-white hover:text-lavender-gray hover:bg-voodoo/50 transition-colors {{ $isContactActive ? 'font-bold bg-voodoo/30' : '' }}">
+                                Contact
+                            </a>
                         </div>
                     </div>
                 </div>

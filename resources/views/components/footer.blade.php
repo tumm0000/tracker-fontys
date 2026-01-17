@@ -90,7 +90,6 @@
             <div class="flex gap-6">
                 <a href="/privacy" class="text-lavender-gray hover:text-white transition-colors text-sm">Privacy Policy</a>
                 <a href="/terms" class="text-lavender-gray hover:text-white transition-colors text-sm">Terms of service</a>
-                <a href="/cookie-settings" class="text-lavender-gray hover:text-white transition-colors text-sm">Cookie settings</a>
             </div>
         </div>
     </div>

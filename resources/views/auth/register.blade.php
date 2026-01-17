@@ -77,21 +77,6 @@
                         @enderror
                     </div>
 
-                    <!-- Password Confirmation Field -->
-                    <div>
-                        <label for="password_confirmation" class="block text-sm font-medium text-neutral-900 mb-2">
-                            Confirm password
-                        </label>
-                        <input 
-                            type="password" 
-                            id="password_confirmation" 
-                            name="password_confirmation" 
-                            required
-                            class="w-full px-4 py-3 rounded-lg border border-neutral-300 bg-neutral-50 text-neutral-900 placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-voodoo focus:border-transparent transition-all"
-                            placeholder="Confirm your password"
-                        >
-                    </div>
-
                     <!-- Terms and Conditions -->
                     <div class="flex items-start">
                         <input 

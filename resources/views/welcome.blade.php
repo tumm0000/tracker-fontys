@@ -38,7 +38,7 @@
 
             <div class="grid md:grid-cols-3 gap-8 mt-16">
                 <!-- Feature 1 -->
-                <div class="bg-white rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                <div class="bg-neutral-100 rounded-2xl p-8 hover:shadow-lg transition-shadow">
                     <div class="text-xs font-medium text-voodoo/70 uppercase tracking-wide mb-3">Browse</div>
                     <h4 class="font-heading text-2xl font-bold text-voodoo mb-3">Pick your time and reserve instantly</h4>
                     <p class="text-base text-rum leading-relaxed mb-6">Choose a slot that works for you</p>
@@ -51,7 +51,7 @@
                 </div>
 
                 <!-- Feature 2 -->
-                <div class="bg-white rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                <div class="bg-neutral-100 rounded-2xl p-8 hover:shadow-lg transition-shadow">
                     <div class="text-xs font-medium text-voodoo/70 uppercase tracking-wide mb-3">Manage</div>
                     <h4 class="font-heading text-2xl font-bold text-voodoo mb-3">Keep track of all your reservations</h4>
                     <p class="text-base text-rum leading-relaxed mb-6">View and cancel bookings anytime</p>
@@ -64,7 +64,7 @@
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="bg-white rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                <div class="bg-neutral-100 rounded-2xl p-8 hover:shadow-lg transition-shadow">
                     <div class="text-xs font-medium text-voodoo/70 uppercase tracking-wide mb-3">Secure</div>
                     <h4 class="font-heading text-2xl font-bold text-voodoo mb-3">Your account stays protected always</h4>
                     <p class="text-base text-rum leading-relaxed mb-6">Login with your Fontys credentials</p>
@@ -88,21 +88,51 @@
                 <p class="text-base text-rum mt-4 max-w-2xl mx-auto">Finding equipment takes no time at all. Log in, search, and book what matters to you.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-16 mt-20 max-w-7xl mx-auto px-8">
+            <div class="grid md:grid-cols-3 gap-8 mt-20 max-w-7xl mx-auto px-8">
                 <!-- Step 1 -->
-                <div class="text-center">
+                <div class="bg-neutral-100 rounded-2xl p-8 border border-neutral-200 shadow-md hover:shadow-xl hover:border-voodoo/30 transition-all duration-300 text-center relative overflow-hidden group">
+                    <!-- Step Number Badge -->
+                    <div class="absolute top-4 right-4 w-10 h-10 bg-voodoo text-white rounded-full flex items-center justify-center font-bold text-lg group-hover:scale-110 transition-transform">
+                        1
+                    </div>
+                    <!-- Icon -->
+                    <div class="w-16 h-16 bg-voodoo/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-voodoo/20 transition-colors">
+                        <svg class="w-8 h-8 text-voodoo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
                     <h4 class="font-heading text-2xl md:text-3xl font-bold text-voodoo mb-4">View available resources</h4>
                     <p class="text-base text-rum leading-relaxed">Browse all equipment and see what is open now.</p>
                 </div>
 
                 <!-- Step 2 -->
-                <div class="text-center">
+                <div class="bg-neutral-100 rounded-2xl p-8 border border-neutral-200 shadow-md hover:shadow-xl hover:border-voodoo/30 transition-all duration-300 text-center relative overflow-hidden group">
+                    <!-- Step Number Badge -->
+                    <div class="absolute top-4 right-4 w-10 h-10 bg-voodoo text-white rounded-full flex items-center justify-center font-bold text-lg group-hover:scale-110 transition-transform">
+                        2
+                    </div>
+                    <!-- Icon -->
+                    <div class="w-16 h-16 bg-voodoo/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-voodoo/20 transition-colors">
+                        <svg class="w-8 h-8 text-voodoo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
                     <h4 class="font-heading text-2xl md:text-3xl font-bold text-voodoo mb-4">Select your time slot</h4>
                     <p class="text-base text-rum leading-relaxed">Pick the hours that fit your schedule.</p>
                 </div>
 
                 <!-- Step 3 -->
-                <div class="text-center">
+                <div class="bg-neutral-100 rounded-2xl p-8 border border-neutral-200 shadow-md hover:shadow-xl hover:border-voodoo/30 transition-all duration-300 text-center relative overflow-hidden group">
+                    <!-- Step Number Badge -->
+                    <div class="absolute top-4 right-4 w-10 h-10 bg-voodoo text-white rounded-full flex items-center justify-center font-bold text-lg group-hover:scale-110 transition-transform">
+                        3
+                    </div>
+                    <!-- Icon -->
+                    <div class="w-16 h-16 bg-voodoo/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-voodoo/20 transition-colors">
+                        <svg class="w-8 h-8 text-voodoo" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
                     <h4 class="font-heading text-2xl md:text-3xl font-bold text-voodoo mb-4">Confirm your booking</h4>
                     <p class="text-base text-rum leading-relaxed">Reserve it and you are done.</p>
                 </div>
