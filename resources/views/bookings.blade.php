@@ -15,8 +15,11 @@
                     View all your reservations and manage upcoming bookings in one place
                 </p>
                 <div class="flex flex-wrap items-center justify-center gap-4">
-                    <a href="#" class="bg-white text-voodoo px-8 py-3 rounded-lg font-medium hover:bg-lavender-gray transition-colors">
+                    <a href="/" class="bg-white text-voodoo px-8 py-3 rounded-lg font-medium hover:bg-lavender-gray transition-colors">
                         Home
+                    </a>
+                    <a href="/login" class="bg-rum text-white px-8 py-3 rounded-lg font-medium hover:bg-rum/80 transition-colors">
+                        Login
                     </a>
                 </div>
             </div>
