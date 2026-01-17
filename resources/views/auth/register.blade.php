@@ -123,7 +123,7 @@
                     <div class="flex-1 border-t border-neutral-300"></div>
                     <span class="px-4 text-sm text-neutral-500">or</span>
                     <div class="flex-1 border-t border-neutral-300"></div>
-                </div>
+                </div>  
 
                 <!-- Sign In Link -->
                 <div class="mt-8 text-center">

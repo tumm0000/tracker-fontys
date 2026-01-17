@@ -21,3 +21,7 @@ Route::get('/resources', function () {
 Route::get('/bookings', function () {
     return view('bookings');
 })->name('bookings');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
